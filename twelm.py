@@ -75,5 +75,13 @@ class XELM(ELM):
         return W, b
 
 
-# TWELM* from the paper is simply 
-# clf = XELM(h=...., C=...., f=tanimoto, balanced=True) # as we do maximize GMean
+class TWELM(XELM):
+    """ 
+    TWELM* model from
+
+    "Weighted Tanimoto Extreme Learning Machine with case study of Drug Discovery"
+    WM Czarnecki, IEEE Computational Intelligence Magazine, 2015
+    """
+    def __init__(self, h, C=10000, random_state=666):
+        super(TWELM, self).__init__(h=h, C=C, f=tanimoto, random_state=random_state, balanced=True)
+
