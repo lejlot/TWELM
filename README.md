@@ -5,6 +5,7 @@ Simple python implementation of **Weighted Tanimoto Extreme Learning Machines**
 
 If you use this code, please cite the following paper
 
+```
 @article{czarnecki2015weighted,
     title={Weighted Tanimoto Extreme Learning Machine with Case Study in Drug Discovery},
     author={Czarnecki, Wojciech Marian},
@@ -15,3 +16,4 @@ If you use this code, please cite the following paper
     year={2015},
     publisher={IEEE}
 }
+```
