@@ -7,6 +7,7 @@ metric you want to optimize
 
 import numpy as np
 from scipy import linalg as la
+from scipy.sparse import csr_matrix
 
 def tanimoto(X, W, b=None):
     """ Tanimoto similarity function """
